@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <input type="text" name="" id="input-id">
+    <button id="btn-id">add</button>
+    <div>
+        <br>
+        <button id="hit-btn">hit</button>
+    <div>
+        <p id="h-1">home 1</p>
+        <p id="h-2">home 2</p>
+        <p id="h-3">home 3</p>
+        <p id="h-4">home 4</p>
+    </div>
+    </div>
+    <script>
+        document.getElementById('hit-btn').addEventListener('click',function(){
+            console.log('hit clicked');
+            setValue('h-1',"ban");
+            //document.getElementById('input-id').value=
+            invutC("input-id")
+        })
+
+        function setValue(element,value){
+           const elev= document.getElementById(element);
+           elev.innerText=value;
+        }
+
+        function invutC(id,value){
+            const input=document.getElementById(id).value;
+            console.log(input)
+        }
+    </script>
+   
+
+</body>
+</html>
